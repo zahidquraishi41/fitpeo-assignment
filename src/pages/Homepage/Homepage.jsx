@@ -4,6 +4,7 @@ import './Homepage.css'
 import { useSidebar } from '../../components/SidebarContext'
 import Cards from '../../components/Cards/Cards'
 import Charts from '../../components/Charts/Charts'
+import Products from '../../components/Products/Products'
 
 
 const Header = () => {
@@ -21,6 +22,7 @@ const Homepage = () => {
 			<Header />
 			<Cards />
 			<Charts />
+			<Products />
 
 		</div>
 	</div>

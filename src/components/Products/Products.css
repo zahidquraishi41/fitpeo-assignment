@@ -1,0 +1,10 @@
+.product-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-desc p {
+    margin: 0;
+    font-weight: bold;
+}
