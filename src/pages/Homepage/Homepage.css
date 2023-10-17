@@ -1,0 +1,18 @@
+.content {
+	background-color: #585f63;
+	position: fixed;
+	top: 0px;
+	overflow-y: scroll !important;
+	left: 250px;
+	width: calc(100% - 250px);
+	height: 100vh;
+}
+
+.header {
+	color: wheat;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
