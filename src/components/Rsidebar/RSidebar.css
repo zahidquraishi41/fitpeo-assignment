@@ -1,0 +1,61 @@
+.sidebar {
+	height: 100vh;
+	position: fixed;
+	background-color: #282c2d;
+}
+
+.sidebar-header {
+	display: flex;
+	align-items: center;
+	background-color: #282c2d;
+	padding-left: 24px;
+	color: wheat;
+	height: 50px;
+}
+
+.sidebar-menu {
+	font-size: smaller;
+	background-color: #282c2d;
+}
+
+.sidebar-item {
+	color: wheat;
+}
+
+.sidebar-item:hover {
+	color: black;
+}
+
+.profile-card {
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	width: 220px;
+	padding: 10px;
+	background-color: wheat;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	height: 55px;
+	display: flex;
+	align-items: center;
+}
+
+.profile-img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 20px;
+	overflow: hidden;
+}
+
+.profile-name {
+	font-size: smaller;
+	display: block;
+	margin-bottom: -8px;
+}
+
+.profile-role {
+	margin-top: 20px;
+	font-size: xx-small;
+	color: #888;
+}

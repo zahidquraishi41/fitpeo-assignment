@@ -1,7 +1,10 @@
-import './App.css'
+import './App.css';
+import RSidebar from './components/Rsidebar/RSidebar';
 
-function App() {
-  return <h1>Hello, World!</h1>
-}
+const App = () => {
+  return <div className="App">
+    <RSidebar />
+  </div>
+};
 
-export default App
+export default App;
