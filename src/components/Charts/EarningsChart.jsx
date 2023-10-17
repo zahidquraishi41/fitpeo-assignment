@@ -16,12 +16,12 @@ const EarningsChart = () => {
       <div className="card-body">
 
         <div className="row justify-content-between">
-          <div className="col-4">
+          <div className="col">
             <h5 className='m-0'>Overview</h5>
             <p className='text-secondary'>Monthly Earning</p>
           </div>
 
-          <div className="col-4 text-end">
+          <div className="col text-end">
             <div className="btn-group">
               <button type="button" className="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                 Quaterly

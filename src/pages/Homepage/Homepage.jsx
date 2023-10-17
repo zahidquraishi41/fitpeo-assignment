@@ -17,7 +17,7 @@ const Header = () => {
 const Homepage = () => {
 	const { isCollapsed } = useSidebar();
 	return <div className={`content ${isCollapsed ? 'collapsed' : ''}`}>
-		<div className="container p-3">
+		<div className="container">
 
 			<Header />
 			<Cards />

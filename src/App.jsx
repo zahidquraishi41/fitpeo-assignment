@@ -5,7 +5,7 @@ import { SidebarProvider } from './components/SidebarContext';
 
 const App = () => {
   return <SidebarProvider>
-    <div className="App d-flex">
+    <div className="App">
       <RSidebar />
       <Homepage />
     </div>
