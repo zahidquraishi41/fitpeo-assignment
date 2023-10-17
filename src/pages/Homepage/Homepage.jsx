@@ -2,6 +2,7 @@ import React from 'react'
 import Searchbar from '../../components/Searchbar'
 import './Homepage.css'
 import { useSidebar } from '../../components/SidebarContext'
+import Cards from '../../components/Cards/Cards'
 
 
 const Header = () => {
@@ -17,6 +18,7 @@ const Homepage = () => {
 		<div className="container p-3">
 
 			<Header />
+			<Cards />
 
 		</div>
 	</div>
