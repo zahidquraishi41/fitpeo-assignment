@@ -9,6 +9,7 @@ import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
 
 import userPicture from '../../images/user_picture.jpg';
 import { useEffect, useState } from 'react';
+import { useSidebar } from '../SidebarContext'
 import './RSidebar.css'
 
 
@@ -25,10 +26,10 @@ const Profile = () => {
 }
 
 const RSidebar = () => {
-	const [collapsed, setCollapsed] = useState(false)
+	const {isCollapsed, setIsCollapsed} = useSidebar()
 
 	const handleResize = () => {
-		window.innerWidth < 768 ? setCollapsed(true) : setCollapsed(false)
+		window.innerWidth < 768 ? setIsCollapsed(true) : setIsCollapsed(false)
 	}
 
 	useEffect(() => {
@@ -40,11 +41,11 @@ const RSidebar = () => {
 	})
 
 	return <div className='sidebar'>
-		<Sidebar collapsed={collapsed}>
+		<Sidebar collapsed={isCollapsed}>
 
 			<div className="sidebar-header">
-				<MenuRoundedIcon className='me-3' cursor='pointer' onClick={() => setCollapsed(!collapsed)} />
-				{!collapsed && <h5 className='mb-0 fs-3'>Fitpeo</h5>}
+				<MenuRoundedIcon className='me-3' cursor='pointer' onClick={() => setIsCollapsed(!isCollapsed)} />
+				{!isCollapsed && <h5 className='mb-0 fs-3'>Fitpeo</h5>}
 			</div>
 
 			<Menu className="sidebar-menu">
@@ -56,7 +57,7 @@ const RSidebar = () => {
 				<SubMenu className='sidebar-item' label="Help" icon={<ContactSupportRoundedIcon />}></SubMenu>
 			</Menu>
 
-			{!collapsed && <Profile />}
+			{!isCollapsed && <Profile />}
 
 		</Sidebar>
 	</div>

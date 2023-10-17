@@ -1,6 +1,7 @@
 import React from 'react'
 import Searchbar from '../../components/Searchbar'
 import './Homepage.css'
+import { useSidebar } from '../../components/SidebarContext'
 
 
 const Header = () => {
@@ -11,7 +12,8 @@ const Header = () => {
 }
 
 const Homepage = () => {
-	return <div className='content'>
+	const { isCollapsed } = useSidebar();
+	return <div className={`content ${isCollapsed ? 'collapsed' : ''}`}>
 		<div className="container p-3">
 
 			<Header />

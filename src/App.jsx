@@ -1,12 +1,16 @@
 import './App.css';
 import RSidebar from './components/Rsidebar/RSidebar';
 import Homepage from './pages/Homepage/Homepage';
+import { SidebarProvider } from './components/SidebarContext';
 
 const App = () => {
-  return <div className="App">
-    <RSidebar />
-    <Homepage />
-  </div>
+  return <SidebarProvider>
+    <div className="App d-flex">
+      <RSidebar />
+      <Homepage />
+    </div>
+  </SidebarProvider>
+
 };
 
 export default App;
