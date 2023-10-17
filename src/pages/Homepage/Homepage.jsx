@@ -3,6 +3,7 @@ import Searchbar from '../../components/Searchbar'
 import './Homepage.css'
 import { useSidebar } from '../../components/SidebarContext'
 import Cards from '../../components/Cards/Cards'
+import Charts from '../../components/Charts/Charts'
 
 
 const Header = () => {
@@ -19,6 +20,7 @@ const Homepage = () => {
 
 			<Header />
 			<Cards />
+			<Charts />
 
 		</div>
 	</div>
